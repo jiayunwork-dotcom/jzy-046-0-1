@@ -1,0 +1,26 @@
+{
+  "name": "regex-visualizer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "正则表达式状态机可视化调试器：Thompson NFA / 子集构造 DFA / 最小化 / 回溯匹配动画",
+  "engines": {
+    "node": ">=20 <21"
+  },
+  "scripts": {
+    "dev:web": "vite --config web/vite.config.js",
+    "dev:server": "node --watch server/index.js",
+    "build": "vite build --config web/vite.config.js",
+    "start": "node server/index.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "vite": "5.4.11"
+  }
+}
